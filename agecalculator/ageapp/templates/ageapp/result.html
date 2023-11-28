@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="mb-4">Result</h2>
+    <div class="alert alert-success" role="alert">
+        Your Age is: {{ age }}
+    </div>
+    <a href="{% url 'age_calculator' %}" class="btn btn-primary">Calculate Age Again</a>
+</div>
+{% endblock %}
